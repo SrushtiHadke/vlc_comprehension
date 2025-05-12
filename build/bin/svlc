@@ -1,0 +1,2 @@
+#! /bin/sh
+exec /home/srushti/Documents/CS/SEM_4/SPC/vlc-submit/build/bin/vlc -I "skins2" "$@"
