@@ -67,10 +67,6 @@ libvhs_plugin_la_SOURCES = video_filter/vhs.c
 libwave_plugin_la_SOURCES = video_filter/wave.c
 libwave_plugin_la_LIBADD = $(LIBM)
 
-
-libtrim_plugin_la_SOURCES = video_filter/trim.c
-libtrim_plugin_la_LIBADD = $(LIBM) -lavformat -lavcodec -lavutil -lswresample -lswscale
-
 video_filter_LTLIBRARIES = \
 	libadjust_plugin.la \
 	libalphamask_plugin.la \
@@ -109,8 +105,7 @@ video_filter_LTLIBRARIES = \
 	libfps_plugin.la \
 	libfreeze_plugin.la \
 	libpuzzle_plugin.la \
-	librotate_plugin.la \
-	libtrim_plugin.la 
+	librotate_plugin.la
 
 # macOS / iOS hardware video filters
 libci_filters_plugin_la_SOURCES = video_filter/ci_filters.m codec/vt_utils.c codec/vt_utils.h
